@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Circle?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="792.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BiliBiliController">
+    <!--左边的控制按钮-->
+    <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="168.0" style="-fx-background-color: #2b2e39;">
+        <JFXRippler>
+            <VBox.margin>
+                <Insets bottom="30.0" top="40.0"/>
+            </VBox.margin>
+            <ImageView fx:id="loginBiliBili" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/akari.png"/>
+                <clip>
+                    <Circle radius="40" centerX="40" centerY="40"/>
+                </clip>
+            </ImageView>
+        </JFXRippler>
+        <JFXRippler>
+            <JFXButton fx:id="home" styleClass="button-selected" alignment="BASELINE_LEFT" graphicTextGap="10.0"
+                       prefHeight="50.0" prefWidth="168.0"
+                       text="首页" textFill="WHITE">
+                <font>
+                    <Font size="16.0"/>
+                </font>
+                <padding>
+                    <Insets left="40.0"/>
+                </padding>
+            </JFXButton>
+        </JFXRippler>
+        <JFXRippler>
+            <JFXButton fx:id="downloading" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0"
+                       prefWidth="168.0" text="下载中" textFill="WHITE">
+                <font>
+                    <Font size="16.0"/>
+                </font>
+                <padding>
+                    <Insets left="40.0"/>
+                </padding>
+            </JFXButton>
+        </JFXRippler>
+        <JFXRippler>
+            <JFXButton fx:id="downloaded" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0"
+                       prefWidth="168.0" text="已下载" textFill="WHITE">
+                <font>
+                    <Font size="16.0"/>
+                </font>
+                <padding>
+                    <Insets left="40.0"/>
+                </padding>
+            </JFXButton>
+        </JFXRippler>
+        <JFXRippler>
+            <JFXButton fx:id="setting" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0"
+                       prefWidth="168.0"
+                       text="设置" textFill="WHITE">
+                <font>
+                    <Font size="16.0"/>
+                </font>
+                <padding>
+                    <Insets left="40.0"/>
+                </padding>
+            </JFXButton>
+        </JFXRippler>
+    </VBox>
+    <!--右边的容器-->
+    <VBox fx:id="rightContainer" prefHeight="400" prefWidth="624" alignment="CENTER"/>
+</HBox>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="260.0" prefWidth="440.0"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      stylesheets="@../css/main.css" styleClass="login-pane"
+      fx:controller="application.controller.LoginController">
+    <HBox alignment="CENTER_RIGHT" prefHeight="36.0">
+        <JFXRippler>
+            <ImageView fx:id="closeWindow" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/close.png"/>
+            </ImageView>
+        </JFXRippler>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="48.0">
+        <JFXRippler>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="312.0" text="登陆B站" textFill="#f45a8d">
+                <font>
+                    <Font size="36.0"/>
+                </font>
+            </Label>
+        </JFXRippler>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="38.0">
+        <JFXRippler>
+            <Label fx:id="tipsInfo" alignment="CENTER" prefHeight="15.0" prefWidth="312.0" text="请在下方粘贴名为SESSDATA的Cookie"
+                   textFill="#cccccc"/>
+        </JFXRippler>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <JFXRippler>
+            <TextField fx:id="sessionTextFiled" styleClass="login-text-filed" prefHeight="30.0" prefWidth="312.0"
+                       promptText="粘贴到这里"/>
+        </JFXRippler>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <JFXButton fx:id="loginButton" styleClass="login-button" prefHeight="30.0" prefWidth="312.0" text="登陆"
+                   textFill="WHITE"/>
+    </HBox>
+</VBox>

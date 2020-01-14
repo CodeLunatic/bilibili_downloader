@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="624.0" styleClass="setting-pane" stylesheets="@../css/main.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="application.controller.SettingController">
+    <HBox prefHeight="50.0">
+        <padding>
+            <Insets left="40.0"/>
+        </padding>
+        <Label text="下载器设置" textFill="#cccccc">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label prefHeight="50.0" prefWidth="140.0" text="同时下载数量" textFill="#cccccc">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <JFXSlider fx:id="threadNum" max="10" min="1" prefWidth="320.0" styleClass="thread-num-slider"/>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label prefHeight="50.0" prefWidth="140.0" text="下载位置" textFill="#cccccc">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <!--目录显示框-->
+        <JFXRippler>
+            <TextField fx:id="locationText" disable="true" prefHeight="26.0" prefWidth="240.0"
+                       styleClass="direction-text" style="-fx-prompt-text-fill: #f45a8d;">
+                <font>
+                    <Font name="Courier New" size="14.0"/>
+                </font>
+            </TextField>
+        </JFXRippler>
+        <!--选择下载路径-->
+        <JFXRippler>
+            <JFXButton fx:id="locationButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0"
+                       styleClass="start-download" text="选择">
+                <font>
+                    <Font name="Microsoft YaHei" size="12.0"/>
+                </font>
+            </JFXButton>
+        </JFXRippler>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label prefHeight="50.0" prefWidth="140.0" text="默认文件清晰度" textFill="#cccccc">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <JFXComboBox fx:id="currentQuality" focusColor="#f01414" unFocusColor="#f45a8d"
+                     prefWidth="320.0" promptText="1080P"/>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label prefHeight="50.0" prefWidth="140.0" text="是否下载歌词" textFill="#cccccc">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <JFXToggleButton fx:id="isDownloadLrc" alignment="CENTER_LEFT" graphicTextGap="16.0" prefWidth="320.0"
+                         text="已关闭下载歌词" textFill="#cccccc"/>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label prefHeight="50.0" prefWidth="140.0" text="是否下载弹幕" textFill="#cccccc">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <JFXToggleButton fx:id="isDownloadDanmu" alignment="CENTER_LEFT" graphicTextGap="16.0" prefWidth="320.0"
+                         text="已关闭下载弹幕" textFill="#cccccc"/>
+    </HBox>
+</VBox>

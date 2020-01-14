@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="624.0" styleClass="home-pane" stylesheets="@../css/main.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="application.controller.HomeController">
+
+    <JFXRippler>
+        <Label fx:id="openBiliBili" alignment="CENTER" graphicTextGap="12.0" prefHeight="50.0" prefWidth="445.0" text="BiliBili Downloader"
+               textFill="WHITE">
+            <font>
+                <Font name="Courier New Bold" size="24.0"/>
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/logo.png"/>
+                </ImageView>
+            </graphic>
+        </Label>
+    </JFXRippler>
+    <HBox alignment="CENTER" prefHeight="88.0">
+        <!--输入框-->
+        <JFXRippler>
+            <TextField fx:id="inputUrl" prefHeight="30.0" prefWidth="365.0"
+                       promptText="https://www.bilibili.com/video/av39718511" styleClass="download-url">
+                <font>
+                    <Font name="Courier New" size="14.0"/>
+                </font>
+            </TextField>
+        </JFXRippler>
+        <!--开始下载按钮-->
+        <JFXRippler>
+            <JFXButton fx:id="startDownload" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0"
+                       styleClass="start-download" text="下载">
+                <font>
+                    <Font name="Microsoft YaHei" size="14.0"/>
+                </font>
+            </JFXButton>
+        </JFXRippler>
+    </HBox>
+
+</VBox>

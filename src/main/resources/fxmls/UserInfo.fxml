@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRippler?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.shape.Circle?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="440.0" styleClass="userinfo-pane" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UserInfoController">
+    <HBox alignment="CENTER_RIGHT" prefHeight="36.0">
+        <JFXRippler>
+            <ImageView fx:id="closeWindow" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/close.png" />
+            </ImageView>
+        </JFXRippler>
+    </HBox>
+    <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="440.0">
+        <ImageView fx:id="faceImage" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <clip>
+                <Circle fill="aqua" radius="30" centerX="30" centerY="30"/>
+            </clip>
+        </ImageView>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="440.0">
+        <Label alignment="CENTER_RIGHT" prefWidth="220.0" text="用户名：" textFill="#cccccc">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <padding>
+                <Insets right="30.0" />
+            </padding>
+        </Label>
+        <Label fx:id="username" prefWidth="220.0" textFill="#cccccc">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="440.0">
+        <Label alignment="CENTER_RIGHT" prefWidth="220.0" text="等级：" textFill="#cccccc">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <padding>
+                <Insets right="30.0" />
+            </padding>
+        </Label>
+        <Label fx:id="level" prefWidth="220.0" textFill="#cccccc">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="440.0">
+        <Label alignment="CENTER_RIGHT" prefWidth="220.0" text="UID：" textFill="#cccccc">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <padding>
+                <Insets right="30.0" />
+            </padding>
+        </Label>
+        <Label fx:id="uid" prefWidth="220.0" textFill="#cccccc">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="TOP_RIGHT" prefHeight="40.0" prefWidth="438.0">
+        <padding>
+            <Insets right="20.0" />
+        </padding>
+        <Label fx:id="quitLogin" text="退出登录" textFill="#888888">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </HBox>
+</VBox>

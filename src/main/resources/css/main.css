@@ -1,0 +1,285 @@
+/*JFoenix蒙版的全局效果*/
+JFXRippler {
+    -jfx-rippler-fill: #f45a8d;
+}
+
+JFXButton {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/*窗口包装器的样式*/
+.jfx-decorator {
+    -fx-decorator-color: #2b2e39;
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 1 1 1;
+}
+
+.download-url {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: #f45a8d;
+    -fx-background-color: #ffffff;
+}
+
+.direction-text {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: #f45a8d;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #f45a8d;
+    -fx-prompt-text-fill: #f45a8d;
+}
+
+.start-download {
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #f45a8d;
+}
+
+.home-pane {
+    -fx-background-image: url('../images/home_bg.jpg');
+    -fx-background-size: cover;
+}
+
+.downloading-pane {
+    -fx-background-image: url('../images/downloading_bg.png');
+    -fx-background-size: cover;
+}
+
+.downloaded-pane {
+    -fx-background-image: url('../images/downloaded_bg.png');
+    -fx-background-size: cover;
+}
+
+.setting-pane {
+    -fx-background-image: url('../images/setting_bg.png');
+    -fx-background-size: cover;
+}
+
+.login-pane {
+    -fx-background-image: url('../images/login_bg.png');
+    -fx-background-size: cover;
+    -fx-border-color: #666666;
+    -fx-border-width: 1;
+}
+
+.userinfo-pane {
+    -fx-background-image: url('../images/userinfo_bg.png');
+    -fx-background-size: cover;
+    -fx-border-color: #666666;
+    -fx-border-width: 1;
+}
+
+.button-selected {
+    -fx-background-color: #f45a8d;
+}
+
+
+.login-text-filed {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: #f45a8d;
+    -fx-border-width: 1;
+}
+
+.login-button {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #f45a8d;
+}
+
+.thread-num-slider {
+    -jfx-default-thumb: #f45a8d;
+    -jfx-default-track: #e3e7eb;
+}
+
+/*下拉框的全局效果*/
+.jfx-combo-box,
+.jfx-combo-box:focused,
+.jfx-combo-box:editable,
+.jfx-combo-box:editable:focused {
+    -jfx-focus-color: #f01414;
+    -jfx-unfocus-color: #f45a8d;
+    -fx-text-fill: #cccccc;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.jfx-combo-box > .list-cell,
+.jfx-combo-box:editable > .list-cell,
+.jfx-combo-box:editable:focused > .list-cell {
+    -fx-text-fill: #cccccc;
+    -fx-prompt-text-fill: #cccccc;
+}
+
+.jfx-combo-box > .arrow-button > .arrow,
+.jfx-combo-box:editable > .arrow-button > .arrow,
+.jfx-combo-box:editable:focused > .arrow-button > .arrow {
+    -fx-background-color: #ffffff;
+}
+
+/*下拉框中的选快效果*/
+.jfx-combo-box .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #f45a8d;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.jfx-combo-box .combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #f45a8d;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/*切换按钮全局效果*/
+JFXToggleButton {
+    -jfx-toggle-color: #f45a8d;
+}
+
+/*=====================================*/
+
+/*没有圆角边框的慕课红背景Button*/
+.button-no-radius-imooc-red {
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #f01414;
+}
+
+/*没有圆角边框的白色背景Button*/
+.button-no-radius-white {
+    -fx-text-fill: #f01414;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #ffffff;
+}
+
+/*滑块效果*/
+.slider-imooc-red {
+    -jfx-default-thumb: #f01414;
+    -jfx-default-track: #212121;
+}
+
+/*单选按钮效果*/
+.radio-button-imooc-red {
+    -jfx-selected-color: #f01414;
+    -jfx-unselected-color: #212121;
+}
+
+/*主界面的样式*/
+.main {
+    -fx-background-color: #e3e7eb;
+    -fx-border-width: 0;
+}
+
+.main-footer {
+    -fx-background-color: #2b333b;
+    -fx-border-width: 0;
+}
+
+.main-text-field {
+    -fx-border-width: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #ffffff;
+}
+
+.main-text-field-error {
+    -fx-border-width: 1px;
+    -fx-border-color: #f01414;
+    -fx-background-radius: 0px;
+    -fx-background-color: #ffffff;
+}
+
+/*设置面板的样式*/
+.settings-pane {
+    -fx-border-width: 1px 0 0 0;
+    -fx-border-color: #e3e7eb;
+    -fx-background-color: #ffffff;
+}
+
+.settings-item-border-top {
+    -fx-border-color: #eeeeee;
+    -fx-border-width: 1px 0 0 0;
+    -fx-background-color: #ffffff;
+}
+
+.settings-item-border-top-and-bottom {
+    -fx-border-color: #eeeeee;
+    -fx-border-width: 1px 0 1px 0;
+    -fx-background-color: #ffffff;
+}
+
+/*全局滚动条样式*/
+.scroll-bar:vertical {
+    -fx-pref-width: 6px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #ffffff;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #aaaaaa;
+}
+
+.scroll-bar:vertical .decrement-button,
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-arrow,
+.scroll-bar:vertical .increment-arrow {
+    -fx-padding: 0;
+    -fx-opacity: 0;
+}
+
+
+/*进度条全局效果的轨道*/
+.progress-bar-download > .track {
+    -fx-background-color: #ffffff;
+    -fx-padding: 1;
+}
+
+/*进度条全局效果的bar*/
+.progress-bar-download > .bar {
+    -fx-background-color: #f01414;
+    -fx-padding: 1;
+}
+
+/*进度条全局效果的轨道*/
+.progress-bar-download-finish > .track {
+    -fx-background-color: #ffffff;
+    -fx-padding: 1;
+}
+
+/*下载完成的进度条的样式*/
+.progress-bar-download-finish > .bar {
+    -fx-background-color: #28a745;
+    -fx-padding: 1;
+}
+
+
+/*文本域的全局效果*/
+JFXTextArea {
+    -jfx-unfocus-color: #936e6e;
+    -jfx-focus-color: #ffffff;
+}
+
+
+ScrollPane:focused {
+    -fx-border-width: 0;
+}
