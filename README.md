@@ -1,5 +1,7 @@
 # BiliBili下载器
 
+> 该项目已经废弃，转向支持更多平台下载的[Download Anything](https://github.com/CodeLunatic/download-anything)
+
 分享一下1年前写的一个`JavaFX`项目，停了很长时间了，还没有完成，界面设计到了一半，下载的逻辑已经全部实现。
 
 > 感谢你无意间发现了这个仓库，该仓库仅供学习交流使用，方便程序员下载`BiliBili`上面的优质学习资源,当前代码为正在开发中的半成品，佛系开发，完全不知道什么时间完成， 甚至`BiliBili`接口已经全部改变也不一定会完成。
